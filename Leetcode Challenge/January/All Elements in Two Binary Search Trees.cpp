@@ -31,28 +31,25 @@ public:
         { 
         
             if (vec1[i] < vec2[j]) {
-                mergedVectors[k] = vec1[i]; 
-                k++;
-                i++;
+                mergedVectors[k++] = vec1[i++]; 
+                
             } else{
-                mergedVectors[k] = vec2[j];
-                k++;
-                j++;
+                mergedVectors[k++] = vec2[j++];
+               
             }    
         } 
   
     
         while (i < vec1.size()) {
-            mergedVectors[k] = vec1[i];
-            k++;
-            i++;
+            mergedVectors[ k++] = vec1[i++];
+           
+           
         }    
   
     
         while (j < vec2.size()) {
-            mergedVectors[k] = vec2[j];
-            k++;
-            j++;
+            mergedVectors[ k++] = vec2[j++];
+           
         }
         
     } 
